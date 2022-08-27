@@ -1,1 +1,1 @@
-# blog-pub
+Personal public blogs.
