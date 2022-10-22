@@ -20,7 +20,7 @@
     > -- https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
 
     下面示例列出了核心的\<dependencies>、\<build>
-    ```
+    ```xml
     <dependencies>
         <dependency>
         <groupId>org.scala-lang</groupId>
