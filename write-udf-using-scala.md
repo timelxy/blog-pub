@@ -81,7 +81,7 @@
     ```
 
 3. 编写UDF Main Class代码 
-    ```
+    ```scala
     package com.demo
 
     import org.apache.hadoop.hive.ql.exec.UDF
@@ -95,13 +95,13 @@
     ```
 
 4. 打包jar
-    ```
+    ```shell
     # 命令行执行maven打包语句。jar输出在target目录下
     mvn package
     ```
 
 5. 本地测试
-    ```
+    ```scala
     // 编写main函数
     object ScalaUDFTest{
         def main(args: Array[String]) {
@@ -115,7 +115,7 @@
     ```
 
 6. Spark SQL中引用UDF
-    ```
+    ```sql
     CREATE TEMPORARY FUNCTION ScalaUDFTest AS 'com.demo.ScalaUDFTest';
 
     select ScalaUDFTest(xxx) from table1;
