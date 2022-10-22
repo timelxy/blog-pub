@@ -6,7 +6,7 @@
 
 ## Part2: 步骤
 1. 创建Scala工程。这里参考Scala官方文档的Maven指引，使用Maven的archetype直接构建
-    ```
+    ```shell
     mvn archetype:generate \
         -DarchetypeGroupId=net.alchim31.maven \
         -DarchetypeArtifactId=scala-archetype-simple
